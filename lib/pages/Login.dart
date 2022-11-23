@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:life_notes/pages/signup.dart';
 import 'dart:ui' as ui;
 import 'package:life_notes/widgets/circle.dart';
 
@@ -22,7 +23,7 @@ class _homeState extends State<login> {
     final double circleSize = size.width * 0.85;
     return Scaffold(
       body: SafeArea(
-          child: Container(
+          child: SizedBox(
               width: double.infinity,
               height: double.infinity,
               child: Stack(children: [
@@ -242,7 +243,13 @@ class _homeState extends State<login> {
                             primary: Colors.white,
                             backgroundColor: const Color(0xffFC3D68),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              signup()));
+                          },
                           child: const Text(
                             'Registrarse',
                             style: TextStyle(
