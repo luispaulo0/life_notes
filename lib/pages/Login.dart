@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:life_notes/pages/Home.dart';
 import 'package:life_notes/pages/signup.dart';
 import 'dart:ui' as ui;
 import 'package:life_notes/widgets/circle.dart';
@@ -221,7 +222,13 @@ class _homeState extends State<login> {
                             primary: Colors.white,
                             backgroundColor: const Color(0xffFC3D68),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                             Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              Home()));
+                          },
                           child: const Text(
                             'Ingresar',
                             style: TextStyle(
