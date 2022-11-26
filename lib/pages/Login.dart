@@ -223,11 +223,10 @@ class _homeState extends State<login> {
                             backgroundColor: const Color(0xffFC3D68),
                           ),
                           onPressed: () {
-                             Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              Home()));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Home()));
                           },
                           child: const Text(
                             'Ingresar',
@@ -252,10 +251,9 @@ class _homeState extends State<login> {
                           ),
                           onPressed: () {
                             Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              signup()));
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => signup()));
                           },
                           child: const Text(
                             'Registrarse',
