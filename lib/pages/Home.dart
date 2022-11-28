@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:life_notes/pages/Cuatris.dart';
 
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
@@ -81,83 +82,145 @@ class _HomeState extends State<Home> {
                 width: size.width * 0.9,
                 height: size.width * 0.4,
                 child: ListView(
-                  children: const [
-                    Text(
-                      "Software",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 72, 71, 71),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Cuatris()));
+                      },
+                      child: const Text(
+                        "Software",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 72, 71, 71),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
-                    Text(
-                      "Agroindustrial",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 72, 71, 71),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Cuatris()));
+                      },
+                      child: const Text(
+                        "Agroindustrial",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 72, 71, 71),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
-                    Text(
-                      "Biomedica",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 72, 71, 71),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Cuatris()));
+                      },
+                      child: const Text(
+                        "Biomedica",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 72, 71, 71),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
-                    Text(
-                      "Mecatronica",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 72, 71, 71),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Cuatris()));
+                      },
+                      child: const Text(
+                        "Mecatronica",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 72, 71, 71),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
-                    Text(
-                      "Energía",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 72, 71, 71),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Cuatris()));
+                      },
+                      child: const Text(
+                        "Energía",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 72, 71, 71),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
-                    Text(
-                      "Tecnologia Ambiental",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 72, 71, 71),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Cuatris()));
+                      },
+                      child: const Text(
+                        "Tecnologia Ambiental",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 72, 71, 71),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
-                    Text(
-                      "Petrolera",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 72, 71, 71),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Cuatris()));
+                      },
+                      child: const Text(
+                        "Petrolera",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 72, 71, 71),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
-                    Text(
-                      "Nano Tecnología",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 72, 71, 71),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Cuatris()));
+                      },
+                      child: const Text(
+                        "Nano Tecnología",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 72, 71, 71),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
-                    Text(
-                      "Administración de empresas",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 72, 71, 71),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Cuatris()));
+                      },
+                      child: const Text(
+                        "Administración de empresas",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 72, 71, 71),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
-                    Text(
-                      "Manofactura",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 72, 71, 71),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Cuatris()));
+                      },
+                      child: const Text(
+                        "Manofactura",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 72, 71, 71),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
-                    Text(
-                      "Agroindustrial",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 72, 71, 71),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
+                    GestureDetector(
+                      child: const Text(
+                        "Agroindustrial",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 72, 71, 71),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
                   ],
                 ),
