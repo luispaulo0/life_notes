@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:life_notes/pages/Publicar.dart';
 
 class publicaciones extends StatefulWidget {
   publicaciones({Key? key}) : super(key: key);
@@ -45,6 +46,29 @@ class _publicacionesState extends State<publicaciones> {
                     color: Colors.black,
                     fontSize: 24,
                     fontWeight: FontWeight.w700),
+              )),
+          Positioned(
+              top: size.width * 0.06,
+              left: size.width * 0.7,
+              child: Center(
+                child: TextButton(
+                    style: TextButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0)),
+                      minimumSize: const Size(20.0, 30.0),
+                      primary: Colors.white,
+                      backgroundColor: const Color(0xffFC3D68),
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Publicar()));
+                    },
+                    child: const Text(
+                      'Publicar',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                      ),
+                    )),
               )),
           Positioned(
               top: size.width * 0.18,
@@ -250,8 +274,8 @@ class _publicacionesState extends State<publicaciones> {
               ),
             ),
           ),
-          Positioned(
-            top: circleSize * 1.6,
+           Positioned(
+            bottom: -circleSize * .045,
             width: size.width * 1.001,
             child: Container(
               height: size.width * 0.2,
@@ -264,7 +288,11 @@ class _publicacionesState extends State<publicaciones> {
             ),
           ),
           Positioned(
-              top: size.width * 1.62,
+              top: size.width * 0.2,
+              left: size.width * 0.05,
+              child: Container()),
+          Positioned(
+              bottom: size.width * .02,
               left: size.width * 0.44,
               child: const Icon(
                 Icons.home,
@@ -272,7 +300,7 @@ class _publicacionesState extends State<publicaciones> {
                 color: Colors.white,
               )),
           Positioned(
-              top: size.width * 1.62,
+              bottom: size.width * .02,
               left: size.width * 0.13,
               child: const Icon(
                 Icons.my_library_books_outlined,
@@ -280,7 +308,7 @@ class _publicacionesState extends State<publicaciones> {
                 color: Colors.white,
               )),
           Positioned(
-              top: size.width * 1.62,
+              bottom: size.width * .02,
               left: size.width * 0.73,
               child: const Icon(
                 Icons.settings,

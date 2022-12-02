@@ -173,8 +173,8 @@ class _CorteState extends State<Corte> {
               ],
             ),
           ),
-          Positioned(
-            top: circleSize * 1.6,
+           Positioned(
+            bottom: -circleSize * .045,
             width: size.width * 1.001,
             child: Container(
               height: size.width * 0.2,
@@ -187,7 +187,11 @@ class _CorteState extends State<Corte> {
             ),
           ),
           Positioned(
-              top: size.width * 1.62,
+              top: size.width * 0.2,
+              left: size.width * 0.05,
+              child: Container()),
+          Positioned(
+              bottom: size.width * .02,
               left: size.width * 0.44,
               child: const Icon(
                 Icons.home,
@@ -195,7 +199,7 @@ class _CorteState extends State<Corte> {
                 color: Colors.white,
               )),
           Positioned(
-              top: size.width * 1.62,
+              bottom: size.width * .02,
               left: size.width * 0.13,
               child: const Icon(
                 Icons.my_library_books_outlined,
@@ -203,7 +207,7 @@ class _CorteState extends State<Corte> {
                 color: Colors.white,
               )),
           Positioned(
-              top: size.width * 1.62,
+              bottom: size.width * .02,
               left: size.width * 0.73,
               child: const Icon(
                 Icons.settings,

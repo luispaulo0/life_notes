@@ -15,7 +15,7 @@ class _CuatrisState extends State<Cuatris> {
     final Size size = MediaQuery.of(context).size;
     final double circleSize = size.width * 1;
     final double leftRight = size.width * 0.05;
-    final double toplist =  size.width * 0.33;
+    final double toplist = size.width * 0.33;
     return Scaffold(
       appBar: AppBar(
         title: const Text("Software"),
@@ -364,43 +364,47 @@ class _CuatrisState extends State<Cuatris> {
                 ],
               ),
             ),
-            Positioned(
-              top: circleSize * 1.6,
-              width: size.width * 1.001,
-              child: Container(
-                height: size.width * 0.2,
-                decoration: const BoxDecoration(
-                  color: Color(0xffFC3D68),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(20),
-                  ),
+             Positioned(
+            bottom: -circleSize * .045,
+            width: size.width * 1.001,
+            child: Container(
+              height: size.width * 0.2,
+              decoration: const BoxDecoration(
+                color: Color(0xffFC3D68),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(20),
                 ),
               ),
             ),
-            Positioned(
-                top: size.width * 1.62,
-                left: size.width * 0.44,
-                child: const Icon(
-                  Icons.home,
-                  size: 40,
-                  color: Colors.white,
-                )),
-            Positioned(
-                top: size.width * 1.62,
-                left: size.width * 0.13,
-                child: const Icon(
-                  Icons.my_library_books_outlined,
-                  size: 40,
-                  color: Colors.white,
-                )),
-            Positioned(
-                top: size.width * 1.62,
-                left: size.width * 0.73,
-                child: const Icon(
-                  Icons.settings,
-                  size: 40,
-                  color: Colors.white,
-                )),
+          ),
+          Positioned(
+              top: size.width * 0.2,
+              left: size.width * 0.05,
+              child: Container()),
+          Positioned(
+              bottom: size.width * .02,
+              left: size.width * 0.44,
+              child: const Icon(
+                Icons.home,
+                size: 40,
+                color: Colors.white,
+              )),
+          Positioned(
+              bottom: size.width * .02,
+              left: size.width * 0.13,
+              child: const Icon(
+                Icons.my_library_books_outlined,
+                size: 40,
+                color: Colors.white,
+              )),
+          Positioned(
+              bottom: size.width * .02,
+              left: size.width * 0.73,
+              child: const Icon(
+                Icons.settings,
+                size: 40,
+                color: Colors.white,
+              )),
           ],
         ),
       )),
